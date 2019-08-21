@@ -12,6 +12,7 @@ public class PublisherController {
 	@Autowired
 	RabbitTemplate rabbitTemplate;
 	
+	
 	@PostMapping(path="/post/topic", consumes="application/json", produces="application/json")
 	public String postTopic(@RequestBody TopicVO topicvo){
 		
